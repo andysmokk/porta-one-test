@@ -1,3 +1,3 @@
-# Hooli-style-popup
+# Mini-mini-app
 
-[Demo](https://andysmokk.github.io/hooli-style-popup/)
+[Demo](https://andysmokk.github.io/porta-one-test/)
