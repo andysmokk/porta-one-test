@@ -36,6 +36,13 @@ function getText(event) {
     return symbols[0];
   };
 
-  title.innerHTML = uniqueSymbol(uniqueSymbols, repeatingSymbols);
+  if (uniqueSymbol(uniqueSymbols, repeatingSymbols) === undefined) {
+    return (title.innerHTML = `<h2 class="unique-title">Серйозно? Введіть хоча б декілька речень!</h2>`);
+  }
+
+  title.innerHTML = `<h2 class="title">Ось він цей унікальний символ: <span class="span">${uniqueSymbol(
+    uniqueSymbols,
+    repeatingSymbols
+  )}</span></h2>`;
   getFirstSymbols(phrase);
 }
